@@ -1,0 +1,14 @@
+[capabilities]
+platformName = "Android"
+automationName = "UiAutomator2"
+deviceName = "Prueba1"   # o el nombre exacto del emulador
+appPackage= "com.mercadolibre"
+appActivity= "com.mercadolibre.navigation.activities.BottomBarActivity"
+unicodeKeyboard = true
+resetKeyboard = true
+noReset = true
+uiautomator2ServerLaunchTimeout= 60000  # 60 segundos
+
+
+[server]
+url = "http://127.0.0.1:4723/wd/hub"
