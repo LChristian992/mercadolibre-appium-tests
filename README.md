@@ -20,15 +20,35 @@ El propósito del proyecto es validar el flujo de búsqueda y filtros dentro de 
 
 ## Instalación y configuración
 
+--- 
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/LChristian992/mercadolibre-appium-tests.git
 cd mercadolibre-appium-tests
+```
+### 2. Instalar las gems necesarias
+gem install appmium_lim rspec
 
-### 2. Gems necesarias
-gem install appium_lib rspec
+### 3. Configurar appium.txt 
+[caps]
+platformName = Android
+deviceName = Pixel_3a_API_30 "Depende del emulador o dispositivo fisico"
+appPackage = com.mercadolibre
+appActivity = com.mercadolibre.splash.SplashActivity "Verificar con Appium Inspector"
+automationName = UiAutomator2
 
-## Ejecucion
-bundle exec rspec mercprueba.rb  
+### 4. Ejecucion de la prueba
+```bash
+bundle exec rspec mercprueba.rb
+```
+
+### Notas
+Los XPaths y resource-ids pueden cambiar según la versión de la app. Verificar con Appium Inspector si hay fallos.
+
+
+
+
+
+
 
 
