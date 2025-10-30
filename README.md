@@ -27,7 +27,9 @@ git clone https://github.com/LChristian992/mercadolibre-appium-tests.git
 cd mercadolibre-appium-tests
 ```
 ### 2. Instalar las gems necesarias
+```bash
 gem install appmium_lim rspec
+```
 
 ### 3. Configurar appium.txt 
 [caps]
@@ -44,6 +46,7 @@ bundle exec rspec mercprueba.rb
 
 ### Notas
 Los XPaths y resource-ids pueden cambiar según la versión de la app. Verificar con Appium Inspector si hay fallos.
+
 
 
 
