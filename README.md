@@ -41,11 +41,16 @@ automationName = UiAutomator2
 
 ### 4. Ejecucion de la prueba
 ```bash
+appium
 bundle exec rspec mercprueba.rb
 ```
 
+## Prueba de funcionalidad
+https://drive.google.com/file/d/1_h1dGjMm_VCAiou4uoByA6hrUXo-a0kB/view?usp=sharing
+
 ### Notas
 Los XPaths y resource-ids pueden cambiar según la versión de la app. Verificar con Appium Inspector si hay fallos.
+
 
 
 
